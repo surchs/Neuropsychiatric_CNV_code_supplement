@@ -1,2 +1,9 @@
-# Neuropsychiatric_CNV_code_supplement
-Analysis and visualization code accompanying the paper functional connectivity endophenotypes of Neuropsychiatric mutations
+# Code supplement to the Neuropsychiatric CNV FC paper
+This repository contains the code used to process and analyse the data presented in the "Neuropsychiatric mutations delineate functional brain connectivity dimensions contributing to autism and schizophrenia " paper. 
+
+## Installation
+Requirements
+- [NIAK](http://niak.simexp-lab.org/build/html/index.html)
+- `cnvfc` (included in this repository)
+
+The analysis scripts included in this repository make use of a number of custom python functions included in the `cnvfc` package. This package does not have to be installed but is locally referenced.
