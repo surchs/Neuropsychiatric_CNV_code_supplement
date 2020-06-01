@@ -1,5 +1,9 @@
 # Code supplement to the Neuropsychiatric CNV FC paper
-This repository contains the code used to process and analyse the data presented in the "[Neuropsychiatric mutations delineate functional brain connectivity dimensions contributing to autism and schizophrenia](https://doi.org/10.1101/862615)" paper. 
+[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
+[![DOI](https://github.com/surchs/Neuropsychiatric_CNV_code_supplement/blob/master/cnv_paper_badge.svg
+)](https://doi.org/10.1101/862615)
+
+This repository contains the code used to process and analyse the data presented in the "Neuropsychiatric mutations delineate functional brain connectivity dimensions contributing to autism and schizophrenia" paper. 
 
 ## Installation
 Requirements
