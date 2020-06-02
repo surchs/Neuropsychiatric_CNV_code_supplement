@@ -14,7 +14,7 @@ CNVs had large mirror effects on FC at the global and regional level, and their 
 
 The FC-signatures of both deletions were associated with the spatial expression pattern of genes within as well genes outside these 2 loci. This genetic redundancy may represent a factor underlying shared FC signatures between both deletions and idiopathic conditions.
 
-![Figure 1](https://github.com/surchs/Neuropsychiatric_CNV_code_supplement/blob/master/cnv_paper_badge.svg/NP_CNV_Fig1.png)
+![Figure 1](https://github.com/surchs/Neuropsychiatric_CNV_code_supplement/blob/master/NP_CNV_Fig1.png)
 
 ## Installation
 Requirements
