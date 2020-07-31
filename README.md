@@ -20,5 +20,22 @@ The FC-signatures of both deletions were associated with the spatial expression 
 Requirements
 - [NIAK](http://niak.simexp-lab.org/build/html/index.html)
 - `cnvfc` (included in this repository)
+- `gene_expression` (submodule included in this repository)
+
+To download the code of this repository, run the following command in a terminal:
+```
+git clone git@github.com:surchs/Neuropsychiatric_CNV_code_supplement.git --recursive
+```
+The `--recursive` flag will ensure that you also download the analysis code in the [`gene_expression` submodule](https://github.com/kkumar-iitkgp-livia/GeneExp_and_CNV_FCsignatures/tree/master).
 
 The analysis scripts included in this repository make use of a number of custom python functions included in the `cnvfc` package. This package does not have to be installed but is locally referenced.
+
+## How to use the repository
+The notebooks in `Notebooks/16p_FC_profile.ipynb` and `Notebooks/22q_FC_profile.ipynb` illustrate the identified FC signatures for the 16p11.2 and 22q11.2 deletion carriers respectively. These findings are based on the analysis scripts in the `Scripts` folder that have been run in the following order:
+
+1.   `Scripts/preprocess_data.m` is an example `NIAK` preprocessing script to preprocess the raw anatomical and functional data.
+2.   `Scripts/generate_connectomes.m` is an example `NIAK` analysis script to compute the seed-based functional connectome for the MIST_64 atlas. This analysis step also implements the regression of noise confounds from the preprocessed functional time series data.
+3.   `Scripts/recast_vectorized_connectome_to_matrix.py` is a helper script to re-organize the vectorized connectome from the Matlab style column major ordering to the numpy style row major ordering.
+4.   `Scripts/FC_case_control_contrast.py` is an analysis script to compute the case-control FC profiles reported in the paper (including the 16p11.2 and 22q11.2 CNV FC profiles)
+5.   `Scripts/CNV_FC_profile_enrichment.py` is an analysis script to compute the similarity between the FC connectomes of individuals in the idiopathic neuropsychiatric samples and the identified CNV FC profiles.
+6.   `Scripts/null_model.py` is a helper script to compute a distribution of randomly permuted FC profiles to compute exact p-values against.
